@@ -1,2 +1,3 @@
 # ExLibris
-Collection management system
+
+Management system for Books, Comics, Movies, Games and Toys.
