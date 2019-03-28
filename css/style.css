@@ -22,6 +22,12 @@ body {
 #sidebar-wrapper .list-group {
   width: 70px;
 }
+
+.make-me-sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
 .bg-dark-blue {
   background-color: #2C3E50;
 }
@@ -51,6 +57,7 @@ body {
 
 #content-body {
   margin-top: 20px;
+  overflow: auto
 }
 .card {
   overflow:hidden;
@@ -85,4 +92,23 @@ body {
 }
 .display-4 {
   font-family: 'Ubuntu', sans-serif;
+}
+
+.list-group-r-item {
+  padding: 10px;
+  color: #474747e7;
+  background: #EAECEE;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Noto Sans', sans-serif;  
+}
+
+.list-group-r-item-action:hover{
+  color: #424949;
+  background-color: #b5cadb7a;
+  text-decoration: none;
+}
+
+.list-group-r-item-action:focus{
+  color: #424949;  
 }

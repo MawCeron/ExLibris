@@ -16,8 +16,9 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
   
-  <!-- Custom styles for this template -->
+  <!-- My custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/carrousel.css" rel="stylesheet">
 
 
 </head>
@@ -29,8 +30,8 @@
     <!-- Sidebar -->
     <div class="bg-dark-blue" id="sidebar-wrapper">
       <div class="sidebar-heading"><br> </div>
-      <div class="list-group list-group-flush">
-        <a href="#" title="Books" class="list-group-item list-group-item-action bg-dark-blue">
+      <div class="list-group list-group-flush make-me-sticky">
+        <a href="books.html" title="Books" class="list-group-item list-group-item-action bg-dark-blue">
           <i class="fas fa-book fa-2x"></i> Books
         </a>
         <a href="#" title="Comics" class="list-group-item list-group-item-action bg-dark-blue">
@@ -51,33 +52,6 @@
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-
-      <nav class="navbar navbar-expand navbar-dark bg-dark-blue">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fas fa-plus"></i> Add
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fas fa-eye"></i> View
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-filter"></i> Filter
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-
       <div class="container-fluid" id="content-body"> 
           <div class="row mb-3">
               <div class="col-xl-3 col-sm-6 py-2">
@@ -135,19 +109,38 @@
                       </div>
                   </div>
               </div>
-          </div>
+          </div>         
+          
+          <!-- CARROUSEL 1 -->
+          <h2>Last books added</h2>
+          <section class="customer-logos slider">
+            <div class="slide"><img src="imgs/example-cover.jpg" height="200"></div>
+            <div class="slide"><img src="imgs/example-cover.jpg" height="200"></div>
+            <div class="slide"><img src="imgs/example-cover.jpg" height="200"></div>
+            <div class="slide"><img src="imgs/example-cover.jpg" height="200"></div>
+            <div class="slide"><img src="imgs/example-cover.jpg" height="200"></div>
+            <div class="slide"><img src="imgs/example-cover.jpg" height="200"></div>
+            <div class="slide"><img src="imgs/example-cover.jpg" height="200"></div>
+            <div class="slide"><img src="imgs/example-cover.jpg" height="200"></div>
+            <div class="slide"><img src="imgs/example-cover.jpg" height="200"></div>
+            
+         </section>
+          <!-- END OF CARROUSEL 1 -->
 
       </div> <!--Content body-->
     </div>
     <!-- /#page-content-wrapper -->
-
   </div>
   <!-- /#wrapper -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+  <!-- Slick slider JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <!-- My scripts -->
+  <script src="js/exlibris.js"></script>
 
 </body>
 
