@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Roboto|Ubuntu');
+
 *{
   cursor: default;
 }
@@ -9,7 +11,7 @@ body {
 #sidebar-wrapper {
   min-height: 100vh;
   width: 70px;
-  margin-left: 0;
+  margin-left: 0;  
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -20,20 +22,26 @@ body {
 #sidebar-wrapper .list-group {
   width: 70px;
 }
+.bg-dark-blue {
+  background-color: #2C3E50;
+}
 
 .list-group-item {
   padding: 10px;
-  color: #f1f1f163;
+  color: #f1f1f1b7;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
+  font-family: 'Noto Sans', sans-serif;  
 }
 
 .list-group-item-action:hover{
-  color:#f1f1f1;
+  color: #2C3E50;
+  background-color: #b5cadb7a;
 }
 
 .list-group-item-action:focus{
-  color:#f1f1f1;
+  color: #2C3E50;
+  background-color: #b5cadb7a;
 }
 
 #page-content-wrapper {
@@ -44,27 +52,37 @@ body {
 #content-body {
   margin-top: 20px;
 }
-
-/* CARD MAIN */
-.card-main {
-  margin: 10px 10px;
-  align-content: center;
-  border-radius: 15px;
-  height: 110px;
-  width: 250px;
+.card {
+  overflow:hidden;
+  background-color: #ffffff;  
 }
-.card-main i {
-  margin-bottom: 20px;
-  font-size: 64px;
+.text-gray {
+  color: #424949;
 }
-.card-main h5{
+.card-body .rotate{
+  z-index: 8;
+  float: right;
+  height: 100%;
+  background-color: #ffffff;
+}
+.card-body .rotate i {
+  color: rgba(20, 20, 20, 0.15);
   position: absolute;
-  right: 20px;
-  top: 17px;
+  left: 0;
+  left: auto;
+  right: -5px;
+  bottom: 5px;
+  display: block;
+  -webkit-transform: rotate(-44deg);
+  -moz-transform: rotate(-44deg);
+  -o-transform: rotate(-44deg);
+  -ms-transform: rotate(-44deg);
+  transform: rotate(-44deg);
 }
-.card-main span{
-  position: absolute;
-  margin-top: 5px;
-  right: 15px;
-  font-size: 53px;
+.text-uppercase {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;  
+}
+.display-4 {
+  font-family: 'Ubuntu', sans-serif;
 }

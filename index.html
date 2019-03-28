@@ -14,10 +14,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+  
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
+
 
 </head>
 
@@ -26,23 +27,23 @@
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-dark" id="sidebar-wrapper">
+    <div class="bg-dark-blue" id="sidebar-wrapper">
       <div class="sidebar-heading"><br> </div>
       <div class="list-group list-group-flush">
-        <a href="#" title="Books" class="list-group-item list-group-item-action bg-dark">
-          <i class="fas fa-book"></i> Books
+        <a href="#" title="Books" class="list-group-item list-group-item-action bg-dark-blue">
+          <i class="fas fa-book fa-2x"></i> Books
         </a>
-        <a href="#" title="Comics" class="list-group-item list-group-item-action bg-dark">
-            <i class="fas fa-comment"></i> Comics
+        <a href="#" title="Comics" class="list-group-item list-group-item-action bg-dark-blue">
+            <i class="fas fa-comment fa-2x"></i> Comics
         </a>
-        <a href="#" title="Movies" class="list-group-item list-group-item-action bg-dark">
-            <i class="fas fa-film"></i> Movies
+        <a href="#" title="Movies" class="list-group-item list-group-item-action bg-dark-blue">
+            <i class="fas fa-film fa-2x"></i> Movies
         </a>
-        <a href="#" title="Games" class="list-group-item list-group-item-action bg-dark">
-            <i class="fas fa-gamepad"></i> Games
+        <a href="#" title="Games" class="list-group-item list-group-item-action bg-dark-blue">
+            <i class="fas fa-gamepad fa-2x"></i> Games
         </a>
-        <a href="#" title="Toys" class="list-group-item list-group-item-action bg-dark">
-            <i class="fas fa-dragon"></i> Toys
+        <a href="#" title="Toys" class="list-group-item list-group-item-action bg-dark-blue">
+            <i class="fas fa-dragon fa-2x"></i> Toys
         </a>
       </div>
     </div>
@@ -51,7 +52,7 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <nav class="navbar navbar-expand navbar-dark bg-dark-blue">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">
@@ -78,45 +79,65 @@
       </nav>
 
       <div class="container-fluid" id="content-body"> 
-        <div class="row main-cards">
-          <div class="col-lg-3 col-sm-6">
-            <div class="card card-main">
-              <div class="card-body">
-                <i class="fas fa-book card-main-icon"></i>
-                <h5>Books</h5>
-                <span id="book-count">150</span> 
+          <div class="row mb-3">
+              <div class="col-xl-3 col-sm-6 py-2">
+                  <div class="card text-gray h-100">
+                      <div class="card-body">
+                          <div class="rotate">
+                              <i class="fa fa-book fa-6x"></i>
+                          </div>
+                          <h6 class="text-uppercase">Books</h6>
+                          <h1 class="display-4">134</h1>
+                      </div>
+                  </div>
               </div>
-            </div>
+              <div class="col-xl-3 col-sm-6 py-2">
+                  <div class="card text-gray h-100">
+                      <div class="card-body">
+                          <div class="rotate">
+                              <i class="far fa-comment fa-6x"></i>
+                          </div>
+                          <h6 class="text-uppercase">Comics</h6>
+                          <h1 class="display-4">87</h1>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 py-2">
+                  <div class="card text-gray h-100">
+                      <div class="card-body">
+                          <div class="rotate">
+                              <i class="fa fa-film fa-6x"></i>
+                          </div>
+                          <h6 class="text-uppercase">Movies</h6>
+                          <h1 class="display-4">125</h1>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 py-2">
+                  <div class="card text-gray h-100">
+                      <div class="card-body">
+                          <div class="rotate">
+                              <i class="fa fa-gamepad fa-6x"></i>
+                          </div>
+                          <h6 class="text-uppercase">Video Games</h6>
+                          <h1 class="display-4">36</h1>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 py-2">
+                  <div class="card text-gray h-100">
+                      <div class="card-body">
+                          <div class="rotate">
+                              <i class="fa fa-dragon fa-6x"></i>
+                          </div>
+                          <h6 class="text-uppercase">Toys</h6>
+                          <h1 class="display-4">36</h1>
+                      </div>
+                  </div>
+              </div>
           </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="card card-main">
-            <div class="card-body">
-              <i class="fas fa-comment card-main-icon"></i>
-              <h5>Comics</h5>
-              <span id="comic-count">23</span> 
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="card card-main">
-            <div class="card-body">
-              <i class="fas fa-film card-main-icon"></i>
-              <h5>Movies</h5>
-              <span id="movie-count">83</span> 
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="card card-main">
-            <div class="card-body">
-              <i class="fas fa-gamepad card-main-icon"></i>
-              <h5>Games</h5>
-              <span id="game-count">12</span> 
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
+
+      </div> <!--Content body-->
     </div>
     <!-- /#page-content-wrapper -->
 
@@ -126,7 +147,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
 
 </body>
 
