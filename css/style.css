@@ -16,7 +16,7 @@ body {
 
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
-  font-size: 1.2rem;
+  font-size: 1.2rem;  
 }
 
 #sidebar-wrapper .list-group {
@@ -93,8 +93,8 @@ body {
 .display-4 {
   font-family: 'Ubuntu', sans-serif;
 }
-
 .list-group-r-item {
+  
   padding: 10px;
   color: #474747e7;
   background: #EAECEE;
@@ -102,13 +102,36 @@ body {
   font-size: 13px;
   font-family: 'Noto Sans', sans-serif;  
 }
-
 .list-group-r-item-action:hover{
   color: #424949;
   background-color: #b5cadb7a;
   text-decoration: none;
 }
-
 .list-group-r-item-action:focus{
   color: #424949;  
+}
+.submenu {  
+  position: relative; 
+  text-align: center;
+  width: 50px;
+}
+.submenu i{
+  padding: 10px 5px 0px 5px;
+  font-size: 30px;
+}
+.submenu li{  
+  font-size: 10pt;  
+  font-family: 'Noto Sans', sans-serif;  
+}
+.submenu li:hover{
+  color: #2C3E50;
+  background-color: #b5cadb7a;
+}
+.submenu a{
+  color: #424949bb;
+  text-decoration: none;
+}
+.submenu a:hover{
+  color: #424949;
+  text-decoration: none;
 }
