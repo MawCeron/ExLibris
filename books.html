@@ -90,7 +90,7 @@
   <!-- Modals -->
   <!-- Add New Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Add Book</h5>
@@ -114,63 +114,64 @@
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 <!-- Manual entry form -->
-                <form>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                      </div>
+                <form class="needs-validation">
+                    <div class="form-group">
+                      <label for="inputTitle">Title</label>
+                      <input type="text" class="form-control" id="inputTitle" placeholder="This is a Book Title" required>
                     </div>
                     <div class="form-group">
-                      <label for="inputAddress">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      <label for="inputAuthor">Author</label>
+                      <input type="text" class="form-control" id="inputAuthor" placeholder="John Doe, Juan Pérez" required>
+                      <small id="AuthorHelp" class="form-text text-muted">Separate multiple authors with comma.</small>
                     </div>
                     <div class="form-group">
-                      <label for="inputAddress2">Address 2</label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                      <label for="textSynopsis">Synopsis</label>
+                      <textarea class="form-control" id="textSynopsis" rows="3"></textarea>
                     </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                    <div class="form-group">
+                      <label for="inputPublisher">Publisher</label>
+                      <input type="text" class="form-control" id="inputPublisher">
+                    </div>
+                    <div class="form-row" >
+                      <div class="form-group col-md-4">
+                        <label for="inputPYear">Publication Year</label>
+                        <input type="text" class="form-control" id="inputPYear">
                       </div>
                       <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                          <option selected>Choose...</option>
-                          <option>...</option>
-                        </select>
+                        <label for="inputISBN">ISBN</label>
+                        <input type="number" class="form-control" id="inputISBN">
                       </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
+                      <div class="form-group has-price col-md-4">
+                        <label for="inputPrice">Price</label>
+                        <span class="fa fa-dollar-sign form-control-feedback"></span>
+                        <input class="form-control" id="inputPrice" type="number" min="0" step="0.01">
                       </div>
                     </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                          Check me out
-                        </label>
-                      </div>
+                    <div class="form-gruop">
+                      Cover image
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" accept="image/*">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                      </div>                        
                     </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    
+                    <hr>
+                    <button type="submit" class="btn btn-exlibris btn-block">Sign in</button>
                   </form>
                   <!-- End Manual Entry Form-->
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <!-- Search Form -->
+              <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <!-- Search Form End -->
+            </div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
           </div>
           <!-- End of Modal Body-->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+        </div>          
       </div>
     </div>
   </div>
