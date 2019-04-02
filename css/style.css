@@ -194,7 +194,22 @@ body {
   text-align: justify;
 }
 .item-card .card-body{
-  margin-right: -40px;
+  margin-right: 0px;
+}
+.item-card .details{
+  color: rgba(49, 100, 151, 0.9);
+  font-family: 'Noto Sans', sans-serif;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: -15px;
+  font-size: 10px;
+}
+.isbn { 
+  font-weight: bold;
+}
+.publicated{
+  font-style: italic;
+  margin-right: 20px;
 }
 .cover {
   float: left;
